@@ -1,0 +1,811 @@
+{
+  "train_samples": 751,
+  "test_samples": 249,
+  "train_positive": 123,
+  "test_positive": 42,
+  "feature_count": 43,
+  "models": {
+    "Logistic Regression (Baseline)": {
+      "best_params": {
+        "clf__C": 0.1
+      },
+      "optimal_threshold": 0.5,
+      "train_time_sec": 8.84,
+      "accuracy": 0.8755,
+      "precision": 0.6038,
+      "recall": 0.7619,
+      "f1_score": 0.6737,
+      "roc_auc": 0.9281,
+      "confusion_matrix": [
+        [
+          186,
+          21
+        ],
+        [
+          10,
+          32
+        ]
+      ],
+      "roc_curve": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0048,
+          0.0048,
+          0.029,
+          0.029,
+          0.0386,
+          0.0386,
+          0.0821,
+          0.0821,
+          0.1159,
+          0.1159,
+          0.1353,
+          0.1353,
+          0.1884,
+          0.1884,
+          0.2271,
+          0.2271,
+          0.3092,
+          0.3092,
+          0.343,
+          0.343,
+          0.3961,
+          0.3961,
+          0.5845,
+          0.5845,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.0238,
+          0.5476,
+          0.5476,
+          0.619,
+          0.619,
+          0.6667,
+          0.6667,
+          0.6905,
+          0.6905,
+          0.7619,
+          0.7619,
+          0.7857,
+          0.7857,
+          0.8333,
+          0.8333,
+          0.8571,
+          0.8571,
+          0.9048,
+          0.9048,
+          0.9286,
+          0.9286,
+          0.9524,
+          0.9524,
+          0.9762,
+          0.9762,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "Random Forest (Tuned)": {
+      "best_params": {
+        "class_weight": "balanced",
+        "max_depth": 8,
+        "min_samples_leaf": 2,
+        "n_estimators": 100
+      },
+      "optimal_threshold": 0.4,
+      "train_time_sec": 26.121,
+      "accuracy": 0.8635,
+      "precision": 0.5833,
+      "recall": 0.6667,
+      "f1_score": 0.6222,
+      "roc_auc": 0.9389,
+      "confusion_matrix": [
+        [
+          187,
+          20
+        ],
+        [
+          14,
+          28
+        ]
+      ],
+      "roc_curve": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0048,
+          0.0048,
+          0.0145,
+          0.0145,
+          0.0193,
+          0.0193,
+          0.0242,
+          0.0242,
+          0.0338,
+          0.0338,
+          0.0483,
+          0.0483,
+          0.0628,
+          0.0628,
+          0.1014,
+          0.1014,
+          0.1111,
+          0.1111,
+          0.1159,
+          0.1159,
+          0.1256,
+          0.1256,
+          0.1401,
+          0.1401,
+          0.1594,
+          0.1594,
+          0.1739,
+          0.1739,
+          0.2126,
+          0.2126,
+          0.2705,
+          0.2705,
+          0.2754,
+          0.2754,
+          0.2947,
+          0.2947,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.0238,
+          0.4286,
+          0.4286,
+          0.4524,
+          0.4524,
+          0.4762,
+          0.4762,
+          0.5714,
+          0.5714,
+          0.5952,
+          0.5952,
+          0.619,
+          0.619,
+          0.6429,
+          0.6429,
+          0.6667,
+          0.6667,
+          0.7381,
+          0.7381,
+          0.7619,
+          0.7619,
+          0.8095,
+          0.8095,
+          0.8333,
+          0.8333,
+          0.8571,
+          0.8571,
+          0.881,
+          0.881,
+          0.9048,
+          0.9048,
+          0.9286,
+          0.9286,
+          0.9524,
+          0.9524,
+          0.9762,
+          0.9762,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "Gradient Boosting (Tuned)": {
+      "best_params": {
+        "learning_rate": 0.03,
+        "max_depth": 2,
+        "n_estimators": 100,
+        "subsample": 1.0
+      },
+      "optimal_threshold": 0.25,
+      "train_time_sec": 24.08,
+      "accuracy": 0.8835,
+      "precision": 0.6512,
+      "recall": 0.6667,
+      "f1_score": 0.6588,
+      "roc_auc": 0.9199,
+      "confusion_matrix": [
+        [
+          192,
+          15
+        ],
+        [
+          14,
+          28
+        ]
+      ],
+      "roc_curve": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0048,
+          0.0048,
+          0.0193,
+          0.0193,
+          0.0193,
+          0.0338,
+          0.0338,
+          0.0386,
+          0.0386,
+          0.0435,
+          0.0531,
+          0.0531,
+          0.0676,
+          0.0725,
+          0.0821,
+          0.087,
+          0.0966,
+          0.1111,
+          0.1256,
+          0.1353,
+          0.1498,
+          0.1498,
+          0.1691,
+          0.1739,
+          0.1739,
+          0.1836,
+          0.1932,
+          0.1932,
+          0.1981,
+          0.2126,
+          0.2271,
+          0.2367,
+          0.3092,
+          0.3237,
+          0.3333,
+          0.4203,
+          0.4638,
+          0.4686,
+          0.4831,
+          0.4879,
+          0.5024,
+          0.5507,
+          0.5604,
+          0.5797,
+          0.6184,
+          0.6377,
+          0.657,
+          0.6812,
+          0.7005,
+          0.7874,
+          0.8116,
+          0.8164,
+          0.8261,
+          0.8696,
+          0.8744,
+          0.9469,
+          0.9614,
+          0.9662,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.0238,
+          0.0476,
+          0.0952,
+          0.2381,
+          0.3333,
+          0.4048,
+          0.4524,
+          0.4762,
+          0.4762,
+          0.5,
+          0.5,
+          0.5476,
+          0.5952,
+          0.5952,
+          0.619,
+          0.619,
+          0.6429,
+          0.6429,
+          0.6429,
+          0.6667,
+          0.6667,
+          0.6667,
+          0.6667,
+          0.6667,
+          0.6905,
+          0.6905,
+          0.6905,
+          0.7381,
+          0.7381,
+          0.7857,
+          0.7857,
+          0.7857,
+          0.8095,
+          0.881,
+          0.881,
+          0.9048,
+          0.9048,
+          0.9048,
+          0.9048,
+          0.9048,
+          0.9524,
+          0.9524,
+          0.9524,
+          0.9524,
+          0.9524,
+          0.9524,
+          0.9524,
+          0.9524,
+          0.9524,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "Extra Trees (Tuned)": {
+      "best_params": {
+        "class_weight": "balanced",
+        "max_depth": 10,
+        "min_samples_leaf": 4,
+        "n_estimators": 100
+      },
+      "optimal_threshold": 0.45,
+      "train_time_sec": 9.077,
+      "accuracy": 0.9157,
+      "precision": 0.7059,
+      "recall": 0.8571,
+      "f1_score": 0.7742,
+      "roc_auc": 0.9492,
+      "confusion_matrix": [
+        [
+          192,
+          15
+        ],
+        [
+          6,
+          36
+        ]
+      ],
+      "roc_curve": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0193,
+          0.0193,
+          0.0242,
+          0.0242,
+          0.0483,
+          0.0483,
+          0.0531,
+          0.0531,
+          0.0676,
+          0.0676,
+          0.0725,
+          0.0725,
+          0.0773,
+          0.0773,
+          0.1208,
+          0.1208,
+          0.1691,
+          0.1691,
+          0.2222,
+          0.2222,
+          0.314,
+          0.314,
+          0.3768,
+          0.3768,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.0238,
+          0.4762,
+          0.4762,
+          0.5,
+          0.5,
+          0.5952,
+          0.5952,
+          0.619,
+          0.619,
+          0.6429,
+          0.6429,
+          0.7143,
+          0.7143,
+          0.8571,
+          0.8571,
+          0.881,
+          0.881,
+          0.9048,
+          0.9048,
+          0.9286,
+          0.9286,
+          0.9524,
+          0.9524,
+          0.9762,
+          0.9762,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "feature_importance": [
+    {
+      "feature": "cumulative_risk_score",
+      "label": "Skor Akumulasi Risiko Maternal",
+      "importance": 0.1053
+    },
+    {
+      "feature": "mean_arterial_pressure_mmHg",
+      "label": "Mean Arterial Pressure / MAP (mmHg)",
+      "importance": 0.0974
+    },
+    {
+      "feature": "maternal_age_years",
+      "label": "Usia Ibu (Tahun)",
+      "importance": 0.0939
+    },
+    {
+      "feature": "systolic_bp_mmHg",
+      "label": "Tekanan Darah Sistolik (mmHg)",
+      "importance": 0.0872
+    },
+    {
+      "feature": "diastolic_bp_mmHg",
+      "label": "Tekanan Darah Diastolik (mmHg)",
+      "importance": 0.0764
+    },
+    {
+      "feature": "prepregnancy_bmi",
+      "label": "IMT Pra-Kehamilan (kg/m\u00b2)",
+      "importance": 0.0456
+    },
+    {
+      "feature": "gestational_age_weeks",
+      "label": "Usia Kehamilan (Minggu)",
+      "importance": 0.0418
+    },
+    {
+      "feature": "lila_cm",
+      "label": "Lingkar Lengan Atas / LILA (cm)",
+      "importance": 0.0362
+    },
+    {
+      "feature": "weight_change_clean",
+      "label": "Kenaikan Berat Badan dari Baseline (kg)",
+      "importance": 0.0341
+    },
+    {
+      "feature": "systolic_bp_change_clean",
+      "label": "Perubahan Sistolik dari ANC Sebelumnya (mmHg)",
+      "importance": 0.0297
+    },
+    {
+      "feature": "proteinuria_dipstick_score",
+      "label": "Skor Hasil Dipstick Protein Urine (0-4)",
+      "importance": 0.0294
+    },
+    {
+      "feature": "interpregnancy_interval_clean",
+      "label": "Jarak Kehamilan (Tahun)",
+      "importance": 0.0286
+    },
+    {
+      "feature": "weight_gain_per_week",
+      "label": "Laju Kenaikan BB per Minggu (kg/mgg)",
+      "importance": 0.0266
+    },
+    {
+      "feature": "pulse_pressure_mmHg",
+      "label": "Tekanan Nadi / Pulse Pressure (mmHg)",
+      "importance": 0.026
+    },
+    {
+      "feature": "hypertension_visit_flag_bin",
+      "label": "Hipertensi Saat Kunjungan (>=140/90 mmHg)",
+      "importance": 0.0256
+    },
+    {
+      "feature": "prior_visit_count",
+      "label": "Jumlah Kunjungan ANC Sebelumnya",
+      "importance": 0.0205
+    },
+    {
+      "feature": "previous_preeclampsia_flag_bin",
+      "label": "Riwayat Preeklamsia Sebelumnya",
+      "importance": 0.0196
+    },
+    {
+      "feature": "parity",
+      "label": "Paritas",
+      "importance": 0.0181
+    },
+    {
+      "feature": "hemoglobin_clean",
+      "label": "Kadar Hemoglobin (g/dL)",
+      "importance": 0.0179
+    },
+    {
+      "feature": "diastolic_bp_change_clean",
+      "label": "Perubahan Diastolik dari ANC Sebelumnya (mmHg)",
+      "importance": 0.0176
+    },
+    {
+      "feature": "high_risk_age_flag_bin",
+      "label": "Usia Ibu Risiko Tinggi (<20 atau >=35 Thn)",
+      "importance": 0.016
+    },
+    {
+      "feature": "gravida",
+      "label": "Gravida (Jumlah Kehamilan)",
+      "importance": 0.0149
+    },
+    {
+      "feature": "obesity_prepregnancy_flag_bin",
+      "label": "Obesitas Pra-Hamil",
+      "importance": 0.013
+    },
+    {
+      "feature": "chronic_hypertension_flag_bin",
+      "label": "Hipertensi Kronik",
+      "importance": 0.0127
+    },
+    {
+      "feature": "family_history_preeclampsia_flag_bin",
+      "label": "Riwayat Preeklamsia Keluarga",
+      "importance": 0.0092
+    },
+    {
+      "feature": "proteinuria_examined_flag_bin",
+      "label": "Status Pemeriksaan Protein Urine Dilakukan",
+      "importance": 0.0086
+    },
+    {
+      "feature": "antiphospholipid_syndrome_flag_bin",
+      "label": "Sindrom Antifosfolipid (APS)",
+      "importance": 0.0083
+    },
+    {
+      "feature": "gestational_diabetes_flag_bin",
+      "label": "Diabetes Gestasional",
+      "importance": 0.0074
+    },
+    {
+      "feature": "clinical_symptom_score",
+      "label": "Skor Akumulasi Gejala Bahaya ANC",
+      "importance": 0.0051
+    },
+    {
+      "feature": "preexisting_diabetes_flag_bin",
+      "label": "Diabetes Pra-Kehamilan",
+      "importance": 0.0048
+    },
+    {
+      "feature": "nulliparity_flag_bin",
+      "label": "Nulipara (Belum Pernah Melahirkan)",
+      "importance": 0.0045
+    },
+    {
+      "feature": "new_partner_pregnancy_flag_bin",
+      "label": "Kehamilan Pasangan Baru",
+      "importance": 0.0034
+    },
+    {
+      "feature": "assisted_reproduction_flag_bin",
+      "label": "Teknologi Reproduksi Berbantu",
+      "importance": 0.0031
+    },
+    {
+      "feature": "abortion_count",
+      "label": "Riwayat Abortus",
+      "importance": 0.0024
+    },
+    {
+      "feature": "multiple_pregnancy_flag_bin",
+      "label": "Kehamilan Ganda/Kembar",
+      "importance": 0.0024
+    },
+    {
+      "feature": "headache_present_bin",
+      "label": "Keluhan Sakit Kepala",
+      "importance": 0.0017
+    },
+    {
+      "feature": "kidney_disease_flag_bin",
+      "label": "Penyakit Ginjal",
+      "importance": 0.0016
+    },
+    {
+      "feature": "fetus_count",
+      "label": "Jumlah Janin",
+      "importance": 0.0013
+    },
+    {
+      "feature": "edema_present_bin",
+      "label": "Edema / Bengkak Saat Kunjungan",
+      "importance": 0.0009
+    },
+    {
+      "feature": "edema_persistent_flag_bin",
+      "label": "Edema Menetap (Persisten)",
+      "importance": 0.0003
+    },
+    {
+      "feature": "epigastric_or_ruq_pain_present_bin",
+      "label": "Nyeri Ulu Hati / Epigastrium",
+      "importance": 0.0003
+    },
+    {
+      "feature": "dyspnea_present_bin",
+      "label": "Keluhan Sesak Napas",
+      "importance": 0.0002
+    },
+    {
+      "feature": "visual_disturbance_present_bin",
+      "label": "Gangguan Penglihatan / Pandangan Kabur",
+      "importance": 0.0001
+    }
+  ],
+  "error_analysis": {
+    "false_negatives": [
+      {
+        "anc_visit_id": "ANC0122",
+        "patient_id": "PTN031",
+        "trimester": "TRIMESTER_1",
+        "gestational_age_weeks": 10,
+        "systolic_bp_mmHg": 109,
+        "diastolic_bp_mmHg": 75,
+        "mean_arterial_pressure_mmHg": 86.3,
+        "proteinuria_dipstick_result": "NEGATIF",
+        "cumulative_risk_score": 0,
+        "pred_prob": 0.212,
+        "final_diagnosis": "PREECLAMPSIA"
+      },
+      {
+        "anc_visit_id": "ANC0123",
+        "patient_id": "PTN031",
+        "trimester": "TRIMESTER_2",
+        "gestational_age_weeks": 18,
+        "systolic_bp_mmHg": 130,
+        "diastolic_bp_mmHg": 68,
+        "mean_arterial_pressure_mmHg": 88.7,
+        "proteinuria_dipstick_result": "TIDAK_DIPERIKSA",
+        "cumulative_risk_score": 0,
+        "pred_prob": 0.224,
+        "final_diagnosis": "PREECLAMPSIA"
+      },
+      {
+        "anc_visit_id": "ANC0244",
+        "patient_id": "PTN061",
+        "trimester": "TRIMESTER_1",
+        "gestational_age_weeks": 11,
+        "systolic_bp_mmHg": 109,
+        "diastolic_bp_mmHg": 68,
+        "mean_arterial_pressure_mmHg": 81.7,
+        "proteinuria_dipstick_result": "TIDAK_DIPERIKSA",
+        "cumulative_risk_score": 2,
+        "pred_prob": 0.337,
+        "final_diagnosis": "PREECLAMPSIA"
+      },
+      {
+        "anc_visit_id": "ANC0245",
+        "patient_id": "PTN061",
+        "trimester": "TRIMESTER_2",
+        "gestational_age_weeks": 25,
+        "systolic_bp_mmHg": 122,
+        "diastolic_bp_mmHg": 59,
+        "mean_arterial_pressure_mmHg": 80.0,
+        "proteinuria_dipstick_result": "TIDAK_DIPERIKSA",
+        "cumulative_risk_score": 2,
+        "pred_prob": 0.219,
+        "final_diagnosis": "PREECLAMPSIA"
+      },
+      {
+        "anc_visit_id": "ANC0416",
+        "patient_id": "PTN105",
+        "trimester": "TRIMESTER_1",
+        "gestational_age_weeks": 10,
+        "systolic_bp_mmHg": 115,
+        "diastolic_bp_mmHg": 69,
+        "mean_arterial_pressure_mmHg": 84.3,
+        "proteinuria_dipstick_result": "TIDAK_DIPERIKSA",
+        "cumulative_risk_score": 1,
+        "pred_prob": 0.348,
+        "final_diagnosis": "PREECLAMPSIA"
+      }
+    ],
+    "false_positives": [
+      {
+        "anc_visit_id": "ANC0184",
+        "patient_id": "PTN046",
+        "trimester": "TRIMESTER_1",
+        "gestational_age_weeks": 9,
+        "systolic_bp_mmHg": 112,
+        "diastolic_bp_mmHg": 66,
+        "mean_arterial_pressure_mmHg": 81.3,
+        "proteinuria_dipstick_result": "TIDAK_DIPERIKSA",
+        "cumulative_risk_score": 3,
+        "pred_prob": 0.472,
+        "final_diagnosis": "NON_PREECLAMPSIA"
+      },
+      {
+        "anc_visit_id": "ANC0185",
+        "patient_id": "PTN046",
+        "trimester": "TRIMESTER_2",
+        "gestational_age_weeks": 16,
+        "systolic_bp_mmHg": 110,
+        "diastolic_bp_mmHg": 76,
+        "mean_arterial_pressure_mmHg": 87.3,
+        "proteinuria_dipstick_result": "TIDAK_DIPERIKSA",
+        "cumulative_risk_score": 3,
+        "pred_prob": 0.509,
+        "final_diagnosis": "NON_PREECLAMPSIA"
+      },
+      {
+        "anc_visit_id": "ANC0186",
+        "patient_id": "PTN046",
+        "trimester": "TRIMESTER_2",
+        "gestational_age_weeks": 24,
+        "systolic_bp_mmHg": 97,
+        "diastolic_bp_mmHg": 72,
+        "mean_arterial_pressure_mmHg": 80.3,
+        "proteinuria_dipstick_result": "TIDAK_DIPERIKSA",
+        "cumulative_risk_score": 3,
+        "pred_prob": 0.416,
+        "final_diagnosis": "NON_PREECLAMPSIA"
+      },
+      {
+        "anc_visit_id": "ANC0266",
+        "patient_id": "PTN067",
+        "trimester": "TRIMESTER_1",
+        "gestational_age_weeks": 10,
+        "systolic_bp_mmHg": 122,
+        "diastolic_bp_mmHg": 66,
+        "mean_arterial_pressure_mmHg": 84.7,
+        "proteinuria_dipstick_result": "TIDAK_DIPERIKSA",
+        "cumulative_risk_score": 1,
+        "pred_prob": 0.408,
+        "final_diagnosis": "NON_PREECLAMPSIA"
+      },
+      {
+        "anc_visit_id": "ANC0449",
+        "patient_id": "PTN113",
+        "trimester": "TRIMESTER_1",
+        "gestational_age_weeks": 10,
+        "systolic_bp_mmHg": 118,
+        "diastolic_bp_mmHg": 77,
+        "mean_arterial_pressure_mmHg": 90.7,
+        "proteinuria_dipstick_result": "NEGATIF",
+        "cumulative_risk_score": 2,
+        "pred_prob": 0.437,
+        "final_diagnosis": "NON_PREECLAMPSIA"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "rows_total": 1000,
+  "unique_patients": 250,
+  "unique_pregnancies": 250,
+  "raw_columns_count": 103,
+  "enriched_columns_count": 186,
+  "total_cells_raw": 103000,
+  "sentinel_numeric_neg1_before": 8005,
+  "sentinel_string_before": 8457,
+  "duplicates_before": 0,
+  "constant_columns_detected": [
+    "systemic_lupus_erythematosus_flag",
+    "eclampsia_flag",
+    "hellp_syndrome_flag",
+    "pulmonary_edema_flag",
+    "placental_abruption_flag",
+    "maternal_icu_admission_flag",
+    "maternal_discharge_status",
+    "birth_order"
+  ],
+  "bmi_max_formula_deviation": 0.10000000000000142,
+  "map_max_formula_deviation": 0.0
+}
